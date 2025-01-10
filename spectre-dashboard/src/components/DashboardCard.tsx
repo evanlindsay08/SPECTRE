@@ -38,7 +38,7 @@ const CardStatus = styled.span<{ status?: 'loading' | 'running' | 'error' }>`
 interface DashboardCardProps {
   title: string;
   status?: 'loading' | 'running' | 'error';
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 export default function DashboardCard({ title, status, children }: DashboardCardProps) {
